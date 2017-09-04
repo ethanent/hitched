@@ -4,7 +4,7 @@
 
 > Git hooks, made easy and lightweight for Node
 
-[GitHub](https://github.com/Ethanent/hitched) | [Hooks list](https://github.com/ethanent/hitched/blob/master/docs/hooks.md) | [NPM](https://www.npmjs.com/package/hitched)
+[GitHub](https://github.com/Ethanent/hitched) | [Hooks list](https://github.com/ethanent/hitched/blob/master/docs/hooks.md) | [Migrating](https://github.com/ethanent/hitched/blob/master/docs/migrating.md) | [NPM](https://www.npmjs.com/package/hitched)
 
 ## Full list of supported Git hooks
 

@@ -1,6 +1,6 @@
 {
   "name": "hitched",
-  "version": "1.1.24",
+  "version": "1.1.25",
   "description": "Git hooks, made easy and lightweight for Node",
   "scripts": {
     "test": "node ./test/coreTest.js",

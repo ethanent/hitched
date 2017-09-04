@@ -4,7 +4,7 @@
 
 > Git hooks, made easy and lightweight for Node
 
-[GitHub](https://github.com/Ethanent/hitched) | [Hooks list](https://github.com/ethanent/hitched/blob/master/docs/hooks.md) | [NPM](https://www.npmjs.com/package/hitched)
+[GitHub](https://github.com/Ethanent/hitched) | [Hooks list](https://github.com/ethanent/hitched/blob/master/docs/hooks.md) | [Migrating](https://github.com/ethanent/hitched/blob/master/docs/migrating.md) | [NPM](https://www.npmjs.com/package/hitched)
 
 ## hitched makes Git hooks easy
 
@@ -30,6 +30,10 @@ And you're now able to use [all of the nifty Git hooks](https://github.com/ethan
 ```
 
 Pretty awesome, right?
+
+## Migration guide / Why migrate?
+
+If you're migrating from another Node Git hook package or are considering doing so, have a look at the migration guide: [Migrating to hitched](https://github.com/ethanent/hitched/blob/master/docs/migrating.md)
 
 ## Full list of Git hooks
 
