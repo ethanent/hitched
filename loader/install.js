@@ -13,6 +13,14 @@ const packageMetadataLocation = path.join(packageRoot, 'package.json')
 
 const githooksDir = path.join(packageRoot, '.git', 'hooks')
 
+const gitDir = path.join(packageRoot, '.git')
+
+if (fs.existsSync(gitDir) === false) {
+	console.log('Not hitching hooks. Not a Git repository!')
+
+	process.exit(0)
+}
+
 
 var packageMetadata = null
 
@@ -24,11 +32,11 @@ catch (err) {
 	process.exit(0)
 }
 
-const packageScripts = packageMetadata.scripts || {};
+const packageScripts = packageMetadata.scripts || {}
 
 
-var savedHooksCount = 0;
-var failedHooksCount = 0;
+var savedHooksCount = 0
+var failedHooksCount = 0
 
 for (let i = 0; i < hookNames.length; i++) {
 	if (packageScripts.hasOwnProperty(hookNames[i])) {
