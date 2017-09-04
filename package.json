@@ -1,0 +1,29 @@
+{
+  "name": "hitched",
+  "version": "0.0.1",
+  "description": "Git hooks, made easy and lightweight for Node",
+  "scripts": {
+    "test": "npm install --only=dev && node ./test/coreTest.js",
+    "install": "node ./loader/install.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ethanent/hitched.git"
+  },
+  "keywords": [
+    "git-hook",
+    "hooks",
+    "hook",
+    "git",
+    "github"
+  ],
+  "author": "Ethan Davis",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "bugs": {
+    "url": "https://github.com/ethanent/hitched/issues"
+  },
+  "homepage": "https://github.com/ethanent/hitched#readme",
+  "devDependencies": {
+    "whew": "^1.1.3"
+  }
+}
