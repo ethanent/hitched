@@ -11,8 +11,6 @@ const hookNames = Object.keys(hooks)
 const packageRoot = path.join(__dirname, '..', '..', '..')
 const packageMetadataLocation = path.join(packageRoot, 'package.json')
 
-const packageScripts = packageMetadata.scripts || {};
-
 const githooksDir = path.join(packageRoot, '.git', 'hooks')
 
 
@@ -25,6 +23,8 @@ catch (err) {
 	console.error('Failed to read package metadata. Any hooks in package scripts will not be hitched. ' + err)
 	process.exit(0)
 }
+
+const packageScripts = packageMetadata.scripts || {};
 
 
 var savedHooksCount = 0;
