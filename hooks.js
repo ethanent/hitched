@@ -15,5 +15,7 @@ module.exports = {
 	'postupdate': 'post-update',
 	'preautogc': 'pre-auto-gc',
 	'postrewrite': 'post-rewrite',
-	'prepush': 'pre-push'
+	'prepush': 'pre-push',
+	'pushtocheckout': 'push-to-checkout',
+	'sendemailvalidate': 'sendemail-validate'
 }

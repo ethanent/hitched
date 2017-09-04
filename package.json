@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Git hooks, made easy and lightweight for Node",
   "scripts": {
-    "test": "npm install --only=dev && node ./test/coreTest.js",
+    "test": "node ./test/coreTest.js",
     "install": "node ./loader/install.js"
   },
   "repository": {
