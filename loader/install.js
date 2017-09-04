@@ -1,5 +1,3 @@
-console.log('Hitching hooks...')
-
 const fs = require('fs')
 const path = require('path')
 
@@ -15,8 +13,15 @@ const githooksDir = path.join(packageRoot, '.git', 'hooks')
 
 const gitDir = path.join(packageRoot, '.git')
 
+
 if (fs.existsSync(gitDir) === false) {
 	console.log('Not hitching hooks. Not a Git repository!')
+
+	process.exit(0)
+}
+
+if (process.env.hasOwnProperty('ENABLE_HITCHED') ? (process.env['ENABLE_HITCHED'] === 'false') : false) {
+	console.log('Not hitching hooks. Hitch was disabled by environment variable.')
 
 	process.exit(0)
 }
@@ -34,6 +39,8 @@ catch (err) {
 
 const packageScripts = packageMetadata.scripts || {}
 
+
+console.log('Hitching hooks...')
 
 var savedHooksCount = 0
 var failedHooksCount = 0

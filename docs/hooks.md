@@ -1,10 +1,10 @@
-<p align="center" style="text-align | center;"><img src="https://github.com/ethanent/hitched/blob/master/media/hitched-textIncluded.png?raw=true" width="220" alt="hitched logo"/></p>
+<p align="center" style="text-align: center;"><img src="https://github.com/ethanent/hitched/blob/master/media/hitched-textIncluded.png?raw=true" width="220" alt="hitched logo"/></p>
 
 ---
 
 > Git hooks, made easy and lightweight for Node
 
-[GitHub](https://github.com/Ethanent/hitched) | [NPM](https://www.npmjs.com/package/hitched)
+[GitHub](https://github.com/Ethanent/hitched) | [Hooks list](https://github.com/ethanent/hitched/blob/master/docs/hooks.md) | [NPM](https://www.npmjs.com/package/hitched)
 
 ## Full list of supported Git hooks
 

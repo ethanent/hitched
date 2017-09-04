@@ -4,7 +4,7 @@
 
 > Git hooks, made easy and lightweight for Node
 
-[GitHub](https://github.com/Ethanent/hitched) | [NPM](https://www.npmjs.com/package/hitched)
+[GitHub](https://github.com/Ethanent/hitched) | [Hooks list](https://github.com/ethanent/hitched/blob/master/docs/hooks.md) | [NPM](https://www.npmjs.com/package/hitched)
 
 ## hitched makes Git hooks easy
 
@@ -18,17 +18,15 @@ Simply install hitched as a dependency...
 npm install --save hitched
 ```
 
-And you're now able to use all of the nifty Git commit hooks, right in your package scripts.
+And you're now able to use [all of the nifty Git hooks](https://github.com/ethanent/hitched/blob/master/docs/hooks.md), right in your package scripts.
 
-`package.json`
-```
-...
-"scripts": {
+`package.json`: "scripts"
+```javascript
+{
 	"precommit": "npm test",
 	"prepush": "npm test",
-	...
+	"...": "..."
 }
-...
 ```
 
 Pretty awesome, right?
@@ -38,3 +36,7 @@ Pretty awesome, right?
 hitched supports all common Git hooks.
 
 For a full list of supported Git hooks and information about the hooks, see [the list over here](https://github.com/ethanent/hitched/blob/master/docs/hooks.md).
+
+## hitched in CI environments
+
+See the docs article: [Using hitched in a CI environment](https://github.com/ethanent/hitched/blob/master/docs/ci.md)
